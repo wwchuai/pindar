@@ -1,0 +1,43 @@
+# 配置 spring 连接数据库的信息，配置好 db 端，后期使用直接调用即可。
+# 由于将该模块做成依赖项，谁调用谁就有该模块对应的数据库 mapper 接口实例
+#spring:
+#  datasource:
+#    # 使用 阿里 提供的数据源类型 # ${hua.business.type}
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      # 驱动配置
+#      # ${hua.business,druid.driver-class-name}
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      # 使用的 ubuntu 的 docker 中的 mysql 存储容器镜像地址
+#      # ${hua.business.druid.url}
+#      url: jdbc:mysql://192.168.110.10:3309/changgou_business?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#      # ${hua.business.druid.username}
+#      username: root
+#      # ${hua.business.druid.password}
+#      password: 123456
+#      # ${hua.business.druid.initial-size}
+#      initial-size: 100
+#      # ${hua.business.druid.max-active}
+#      max-active: 2000
+#      # ${hua.business.druid.min-idle}
+#      min-idle: 10
+#      # ${hua.business.druid.max-wait}
+#      max-wait: 20000
+# mybatis-plus 核心配置
+mybatis-plus:
+  # 扫描的 mapper.xml 文件路径
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  # 配置属性信息
+  configuration:
+    # 是否开启缓存 默认 true
+    cache-enabled: false
+    # 是否开启 lazy 懒加载 默认 false
+    lazy-loading-enabled: true
+    # 有延时加载属性的对象，将会完全被加载 默认 true
+    aggressive-lazy-loading: false
+  # 当前 db 层的 mapper.xml 需要的 domain 实体对象包路径名称
+  type-aliases-package: com.hnguigu.domain
+# 日志打印
+logging:
+  level:
+    com.hnguigu.config: trace

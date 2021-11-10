@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.QrtzFiredTriggersMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.QrtzFiredTriggers">
+            <id property="SCHED_NAME" column="SCHED_NAME" jdbcType="VARCHAR"/>
+            <id property="ENTRY_ID" column="ENTRY_ID" jdbcType="VARCHAR"/>
+            <result property="TRIGGER_NAME" column="TRIGGER_NAME" jdbcType="VARCHAR"/>
+            <result property="TRIGGER_GROUP" column="TRIGGER_GROUP" jdbcType="VARCHAR"/>
+            <result property="INSTANCE_NAME" column="INSTANCE_NAME" jdbcType="VARCHAR"/>
+            <result property="FIRED_TIME" column="FIRED_TIME" jdbcType="BIGINT"/>
+            <result property="SCHED_TIME" column="SCHED_TIME" jdbcType="BIGINT"/>
+            <result property="PRIORITY" column="PRIORITY" jdbcType="INTEGER"/>
+            <result property="STATE" column="STATE" jdbcType="VARCHAR"/>
+            <result property="JOB_NAME" column="JOB_NAME" jdbcType="VARCHAR"/>
+            <result property="JOB_GROUP" column="JOB_GROUP" jdbcType="VARCHAR"/>
+            <result property="IS_NONCONCURRENT" column="IS_NONCONCURRENT" jdbcType="VARCHAR"/>
+            <result property="REQUESTS_RECOVERY" column="REQUESTS_RECOVERY" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        SCHED_NAME,ENTRY_ID,TRIGGER_NAME,
+        TRIGGER_GROUP,INSTANCE_NAME,FIRED_TIME,
+        SCHED_TIME,PRIORITY,STATE,
+        JOB_NAME,JOB_GROUP,IS_NONCONCURRENT,
+        REQUESTS_RECOVERY
+    </sql>
+</mapper>

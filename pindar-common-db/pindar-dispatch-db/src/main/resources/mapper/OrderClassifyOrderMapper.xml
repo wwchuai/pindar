@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.OrderClassifyOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.OrderClassifyOrder">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="order_classify_id" column="order_classify_id" jdbcType="VARCHAR"/>
+            <result property="order_id" column="order_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,order_classify_id,order_id
+    </sql>
+</mapper>

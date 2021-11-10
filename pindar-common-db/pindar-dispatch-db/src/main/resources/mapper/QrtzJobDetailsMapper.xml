@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.QrtzJobDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.QrtzJobDetails">
+            <id property="SCHED_NAME" column="SCHED_NAME" jdbcType="VARCHAR"/>
+            <id property="JOB_NAME" column="JOB_NAME" jdbcType="VARCHAR"/>
+            <id property="JOB_GROUP" column="JOB_GROUP" jdbcType="VARCHAR"/>
+            <result property="DESCRIPTION" column="DESCRIPTION" jdbcType="VARCHAR"/>
+            <result property="JOB_CLASS_NAME" column="JOB_CLASS_NAME" jdbcType="VARCHAR"/>
+            <result property="IS_DURABLE" column="IS_DURABLE" jdbcType="VARCHAR"/>
+            <result property="IS_NONCONCURRENT" column="IS_NONCONCURRENT" jdbcType="VARCHAR"/>
+            <result property="IS_UPDATE_DATA" column="IS_UPDATE_DATA" jdbcType="VARCHAR"/>
+            <result property="REQUESTS_RECOVERY" column="REQUESTS_RECOVERY" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        SCHED_NAME,JOB_NAME,JOB_GROUP,
+        DESCRIPTION,JOB_CLASS_NAME,IS_DURABLE,
+        IS_NONCONCURRENT,IS_UPDATE_DATA,REQUESTS_RECOVERY,
+        JOB_DATA
+    </sql>
+</mapper>

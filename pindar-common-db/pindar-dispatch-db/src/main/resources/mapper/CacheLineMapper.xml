@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.CacheLineMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.CacheLine">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="start_agency_id" column="start_agency_id" jdbcType="VARCHAR"/>
+            <result property="end_agency_id" column="end_agency_id" jdbcType="VARCHAR"/>
+            <result property="verify_key" column="verify_key" jdbcType="VARCHAR"/>
+            <result property="distance" column="distance" jdbcType="DECIMAL"/>
+            <result property="cost" column="cost" jdbcType="DECIMAL"/>
+            <result property="estimated_time" column="estimated_time" jdbcType="VARCHAR"/>
+            <result property="transfer_count" column="transfer_count" jdbcType="INTEGER"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="is_current" column="is_current" jdbcType="BOOLEAN"/>
+            <result property="create_date" column="create_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,start_agency_id,end_agency_id,
+        verify_key,distance,cost,
+        estimated_time,transfer_count,version,
+        is_current,create_date
+    </sql>
+</mapper>

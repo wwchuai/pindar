@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.QrtzSimpropTriggersMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.QrtzSimpropTriggers">
+            <id property="SCHED_NAME" column="SCHED_NAME" jdbcType="VARCHAR"/>
+            <id property="TRIGGER_NAME" column="TRIGGER_NAME" jdbcType="VARCHAR"/>
+            <id property="TRIGGER_GROUP" column="TRIGGER_GROUP" jdbcType="VARCHAR"/>
+            <result property="STR_PROP_1" column="STR_PROP_1" jdbcType="VARCHAR"/>
+            <result property="STR_PROP_2" column="STR_PROP_2" jdbcType="VARCHAR"/>
+            <result property="STR_PROP_3" column="STR_PROP_3" jdbcType="VARCHAR"/>
+            <result property="INT_PROP_1" column="INT_PROP_1" jdbcType="INTEGER"/>
+            <result property="INT_PROP_2" column="INT_PROP_2" jdbcType="INTEGER"/>
+            <result property="LONG_PROP_1" column="LONG_PROP_1" jdbcType="BIGINT"/>
+            <result property="LONG_PROP_2" column="LONG_PROP_2" jdbcType="BIGINT"/>
+            <result property="DEC_PROP_1" column="DEC_PROP_1" jdbcType="DECIMAL"/>
+            <result property="DEC_PROP_2" column="DEC_PROP_2" jdbcType="DECIMAL"/>
+            <result property="BOOL_PROP_1" column="BOOL_PROP_1" jdbcType="VARCHAR"/>
+            <result property="BOOL_PROP_2" column="BOOL_PROP_2" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,
+        STR_PROP_1,STR_PROP_2,STR_PROP_3,
+        INT_PROP_1,INT_PROP_2,LONG_PROP_1,
+        LONG_PROP_2,DEC_PROP_1,DEC_PROP_2,
+        BOOL_PROP_1,BOOL_PROP_2
+    </sql>
+</mapper>

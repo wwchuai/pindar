@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.QrtzSchedulerStateMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.QrtzSchedulerState">
+            <id property="SCHED_NAME" column="SCHED_NAME" jdbcType="VARCHAR"/>
+            <id property="INSTANCE_NAME" column="INSTANCE_NAME" jdbcType="VARCHAR"/>
+            <result property="LAST_CHECKIN_TIME" column="LAST_CHECKIN_TIME" jdbcType="BIGINT"/>
+            <result property="CHECKIN_INTERVAL" column="CHECKIN_INTERVAL" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        SCHED_NAME,INSTANCE_NAME,LAST_CHECKIN_TIME,
+        CHECKIN_INTERVAL
+    </sql>
+</mapper>

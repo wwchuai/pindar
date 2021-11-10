@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.ScheduleJobMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.ScheduleJob">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="bean_name" column="bean_name" jdbcType="VARCHAR"/>
+            <result property="params" column="params" jdbcType="VARCHAR"/>
+            <result property="cron_expression" column="cron_expression" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="business_id" column="business_id" jdbcType="VARCHAR"/>
+            <result property="creator" column="creator" jdbcType="BIGINT"/>
+            <result property="create_date" column="create_date" jdbcType="TIMESTAMP"/>
+            <result property="updater" column="updater" jdbcType="BIGINT"/>
+            <result property="update_date" column="update_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,bean_name,params,
+        cron_expression,status,remark,
+        business_id,creator,create_date,
+        updater,update_date
+    </sql>
+</mapper>

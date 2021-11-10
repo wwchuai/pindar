@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pindar-web" />
+        <module name="pindar-dispatch-db" />
+        <module name="pindar-dispatch-service-api" />
+        <module name="pindar-dispatch-service" />
+        <module name="pindar-db-config" />
+        <module name="pindar-common" />
+        <module name="pindar-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pindar-dispatch-config" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pindar-common" options="-parameters" />
+      <module name="pindar-common-db" options="-parameters" />
+      <module name="pindar-config" options="-parameters" />
+      <module name="pindar-db-config" options="-parameters" />
+      <module name="pindar-dispatch-config" options="-parameters" />
+      <module name="pindar-dispatch-db" options="-parameters" />
+      <module name="pindar-dispatch-service" options="-parameters" />
+      <module name="pindar-dispatch-service-api" options="-parameters" />
+      <module name="pindar-gateway" options="-parameters" />
+      <module name="pindar-parent" options="-parameters" />
+      <module name="pindar-service" options="-parameters" />
+      <module name="pindar-service-api" options="-parameters" />
+      <module name="pindar-web" options="-parameters" />
+    </option>
+  </component>
+</project>

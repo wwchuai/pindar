@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnguigu.mapper.QrtzCronTriggersMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnguigu.domain.QrtzCronTriggers">
+            <id property="SCHED_NAME" column="SCHED_NAME" jdbcType="VARCHAR"/>
+            <id property="TRIGGER_NAME" column="TRIGGER_NAME" jdbcType="VARCHAR"/>
+            <id property="TRIGGER_GROUP" column="TRIGGER_GROUP" jdbcType="VARCHAR"/>
+            <result property="CRON_EXPRESSION" column="CRON_EXPRESSION" jdbcType="VARCHAR"/>
+            <result property="TIME_ZONE_ID" column="TIME_ZONE_ID" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,
+        CRON_EXPRESSION,TIME_ZONE_ID
+    </sql>
+</mapper>

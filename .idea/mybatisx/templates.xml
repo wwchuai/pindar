@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TemplatesSettings">
+    <option name="templateConfigs">
+      <TemplateContext>
+        <option name="generateConfig">
+          <GenerateConfig>
+            <option name="annotationType" value="MYBATIS_PLUS3" />
+            <option name="basePackage" value="com.hnguigu" />
+            <option name="basePath" value="src/main/java" />
+            <option name="encoding" value="UTF-8" />
+            <option name="extraClassSuffix" value="" />
+            <option name="ignoreFieldPrefix" value="" />
+            <option name="ignoreFieldSuffix" value="" />
+            <option name="ignoreTablePrefix" value="pd_" />
+            <option name="ignoreTableSuffix" value="" />
+            <option name="moduleName" value="pindar-dispatch-db" />
+            <option name="modulePath" value="$PROJECT_DIR$/pindar-common-db/pindar-dispatch-db" />
+            <option name="moduleUIInfoList">
+              <list>
+                <ModuleInfoGo>
+                  <option name="basePath" value="${domain.basePath}" />
+                  <option name="configName" value="mapperInterface" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}Mapper" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/pindar-common-db/pindar-dispatch-db" />
+                  <option name="packageName" value="${domain.basePackage}.mapper" />
+                </ModuleInfoGo>
+                <ModuleInfoGo>
+                  <option name="basePath" value="src/main/resources" />
+                  <option name="configName" value="mapperXml" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}Mapper" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.xml" />
+                  <option name="modulePath" value="$PROJECT_DIR$/pindar-common-db/pindar-dispatch-db" />
+                  <option name="packageName" value="mapper" />
+                </ModuleInfoGo>
+                <ModuleInfoGo>
+                  <option name="basePath" value="${domain.basePath}" />
+                  <option name="configName" value="serviceImpl" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}ServiceImpl" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}ServiceImpl.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/pindar-service/pindar-dispatch-service" />
+                  <option name="packageName" value="com.hnguigu.impl" />
+                </ModuleInfoGo>
+                <ModuleInfoGo>
+                  <option name="basePath" value="${domain.basePath}" />
+                  <option name="configName" value="serviceInterface" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}Service" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}Service.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/pindar-service-api/pindar-dispatch-service-api" />
+                  <option name="packageName" value="${domain.basePackage}.service" />
+                </ModuleInfoGo>
+              </list>
+            </option>
+            <option name="needToStringHashcodeEquals" value="true" />
+            <option name="needsComment" value="true" />
+            <option name="relativePackage" value="domain" />
+            <option name="superClass" value="" />
+            <option name="tableUIInfoList">
+              <list>
+                <TableUIInfo>
+                  <option name="className" value="CacheLine" />
+                  <option name="tableName" value="pd_cache_line" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzBlobTriggers" />
+                  <option name="tableName" value="QRTZ_BLOB_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzJobDetails" />
+                  <option name="tableName" value="QRTZ_JOB_DETAILS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzSchedulerState" />
+                  <option name="tableName" value="QRTZ_SCHEDULER_STATE" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzFiredTriggers" />
+                  <option name="tableName" value="QRTZ_FIRED_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzPausedTriggerGrps" />
+                  <option name="tableName" value="QRTZ_PAUSED_TRIGGER_GRPS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzLocks" />
+                  <option name="tableName" value="QRTZ_LOCKS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="OrderClassifyOrder" />
+                  <option name="tableName" value="pd_order_classify_order" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzSimpleTriggers" />
+                  <option name="tableName" value="QRTZ_SIMPLE_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="ScheduleJob" />
+                  <option name="tableName" value="schedule_job" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="OrderClassifyAttach" />
+                  <option name="tableName" value="pd_order_classify_attach" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzTriggers" />
+                  <option name="tableName" value="QRTZ_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="ScheduleJobLog" />
+                  <option name="tableName" value="schedule_job_log" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="OrderClassify" />
+                  <option name="tableName" value="pd_order_classify" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzSimpropTriggers" />
+                  <option name="tableName" value="QRTZ_SIMPROP_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="CacheLineDetail" />
+                  <option name="tableName" value="pd_cache_line_detail" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="CacheLineUse" />
+                  <option name="tableName" value="pd_cache_line_use" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzCronTriggers" />
+                  <option name="tableName" value="QRTZ_CRON_TRIGGERS" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="QrtzCalendars" />
+                  <option name="tableName" value="QRTZ_CALENDARS" />
+                </TableUIInfo>
+              </list>
+            </option>
+            <option name="templatesName" value="mybatis-plus3" />
+            <option name="useActualColumnAnnotationInject" value="true" />
+            <option name="useActualColumns" value="true" />
+            <option name="useLombokPlugin" value="true" />
+          </GenerateConfig>
+        </option>
+        <option name="moduleName" value="pindar-dispatch-db" />
+        <option name="projectPath" value="$PROJECT_DIR$" />
+        <option name="templateName" value="mybatis-plus3" />
+      </TemplateContext>
+    </option>
+  </component>
+</project>
